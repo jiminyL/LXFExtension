@@ -325,12 +325,12 @@
 		9871FA442241D90E00A2BB73 /* LXF_Tools */ = {
 			isa = PBXGroup;
 			children = (
+				9871FAFD2241D90E00A2BB73 /* LXF_config.h */,
 				9871FA452241D90E00A2BB73 /* ThirdLibs */,
 				9871FAB92241D90E00A2BB73 /* LXF_Toolkit */,
 				9871FAD02241D90E00A2BB73 /* CommonViews */,
 				9871FAF32241D90E00A2BB73 /* APIBase */,
 				9871FAFA2241D90E00A2BB73 /* lxf_FeatureViews */,
-				9871FAFD2241D90E00A2BB73 /* LXF_config.h */,
 				9871FAFE2241D90E00A2BB73 /* Manager */,
 			);
 			name = LXF_Tools;
