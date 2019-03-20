@@ -15,32 +15,16 @@
 //@interface APIInterface : AFHTTPClient
 @interface APIInterface : NSObject
 
-typedef enum {
-    CodeStateOK                                                 = 200,
-    CodeStateToLogin                                            = -10000,
-    CodeStateNoUnion                                            = 404
-} CodeState;
-
 @property (nonatomic, retain) APIBasis *apiBase;
 
 + (APIInterface *)sharedInstance;
 
 - (id)init;
 
-- (void)startAPIWithCallback:(void (^)(BOOL success, NSString *message))callback;
++ (NSMutableDictionary *)sortDictionaryWithDict:(NSDictionary *)dict;
 
-- (void)cancelAPI;
-
-- (NSString *)obtainUpdatingMessage;
-
-- (NSMutableDictionary *)sortDictionaryWithDict:(NSDictionary *)dict;
-
-- (NSString *)jointDictAllKeysWithDict:(NSDictionary *)dict;
++ (NSString *)jointDictAllKeysWithDict:(NSDictionary *)dict;
 
 - (NSInteger)ceilWithFloat:(double)doubleValue;
-
-+ (NSString *)model:(NSString *)model action:(NSString *)action;
-
-+ (NSString *)fetchApiTokenWithPara:(NSDictionary *)para;
 
 @end

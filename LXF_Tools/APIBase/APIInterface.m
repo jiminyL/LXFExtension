@@ -32,18 +32,6 @@
     return self;
 }
 
-- (void)startAPIWithCallback:(void (^)(BOOL, NSString *))callback {
-    
-}
-
-- (void)cancelAPI {
-
-}
-
-- (NSString *)obtainUpdatingMessage {
-    return @"";
-}
-
 + (NSMutableDictionary *)sortDictionaryWithDict:(NSDictionary *)dict
 {
     NSArray* arr = [dict allKeys];
@@ -98,28 +86,5 @@
     return result;
 }
 
-+ (NSString *)model:(NSString *)model action:(NSString *)action
-{
-    NSDate *localDate = [NSDate date]; //获取当前时间
-    //转换成年月日
-    NSDateFormatter *fm = [[NSDateFormatter alloc]init];
-    fm.locale = [[NSLocale alloc]initWithLocaleIdentifier:@"zh_CH"];
-    fm.dateFormat = @"yyyyMMdd";
-    NSString *temp = [fm stringFromDate:localDate];
-    //    NSDate *now = [fm dateFromString:temp];
-    //
-    //    NSString *timeSp = [NSString stringWithFormat:@"%ld", (long)[now timeIntervalSince1970]];  //转化为UNIX时间戳
-    //    NSLog(@"timeSp:%@",timeSp); //时间戳的值
-    NSString *string = [NSString stringWithFormat:@"%@%@%@99-k",model,action,temp];
-    NSString *md5_str = [string md5HexDigest];
-    return md5_str;
-}
-
-+ (NSString *)fetchApiTokenWithPara:(NSDictionary *)para
-{
-    para = [self sortDictionaryWithDict:para];
-    NSString *result = [NSString stringWithFormat:@"%@appaijiancai-sdfa468aqerxcv", [self jointDictAllKeysWithDict:para]];
-    return [result md5HexDigest];
-}
 
 @end

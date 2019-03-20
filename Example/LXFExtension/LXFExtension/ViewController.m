@@ -8,8 +8,6 @@
 
 #import "ViewController.h"
 
-#import "LXF_config.h"
-
 @interface ViewController ()
 
 @end
@@ -19,7 +17,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSLog(@"aaa");
 }
 
 
