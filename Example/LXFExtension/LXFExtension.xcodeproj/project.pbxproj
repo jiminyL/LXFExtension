@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9811096C2241E7EB00D6B398 /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 9811096B2241E7EB00D6B398 /* UINavigationController+FDFullscreenPopGesture.m */; };
 		986195632241D8D600A5385E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 986195622241D8D600A5385E /* AppDelegate.m */; };
 		986195662241D8D600A5385E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 986195652241D8D600A5385E /* ViewController.m */; };
 		986195692241D8D600A5385E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 986195672241D8D600A5385E /* Main.storyboard */; };
@@ -98,6 +99,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9811096A2241E7EB00D6B398 /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
+		9811096B2241E7EB00D6B398 /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
 		9861955E2241D8D600A5385E /* LXFExtension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LXFExtension.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		986195612241D8D600A5385E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		986195622241D8D600A5385E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -289,6 +292,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		981109692241E7EB00D6B398 /* FDFullscreenPopGesture */ = {
+			isa = PBXGroup;
+			children = (
+				9811096A2241E7EB00D6B398 /* UINavigationController+FDFullscreenPopGesture.h */,
+				9811096B2241E7EB00D6B398 /* UINavigationController+FDFullscreenPopGesture.m */,
+			);
+			path = FDFullscreenPopGesture;
+			sourceTree = "<group>";
+		};
 		986195552241D8D600A5385E = {
 			isa = PBXGroup;
 			children = (
@@ -340,6 +352,7 @@
 		9871FA452241D90E00A2BB73 /* ThirdLibs */ = {
 			isa = PBXGroup;
 			children = (
+				981109692241E7EB00D6B398 /* FDFullscreenPopGesture */,
 				9871FA462241D90E00A2BB73 /* gtmbase64 */,
 				9871FA4A2241D90E00A2BB73 /* OpenUDID */,
 				9871FA4E2241D90E00A2BB73 /* MJExtension */,
@@ -832,6 +845,7 @@
 				9871FB112241D90E00A2BB73 /* NSString+MJExtension.m in Sources */,
 				9871FB1C2241D90E00A2BB73 /* MJRefreshBackNormalFooter.m in Sources */,
 				9871FB0D2241D90E00A2BB73 /* NSObject+MJCoding.m in Sources */,
+				9811096C2241E7EB00D6B398 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				9871FB0E2241D90E00A2BB73 /* MJExtensionConst.m in Sources */,
 				9871FB552241D90E00A2BB73 /* LXF_FloatView.m in Sources */,
 				9871FB252241D90E00A2BB73 /* MJRefreshBackFooter.m in Sources */,
