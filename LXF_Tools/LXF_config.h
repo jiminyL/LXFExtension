@@ -34,7 +34,7 @@
 #define HOTSPOT_STATUSBAR_HEIGHT        20
 #define IS_HOTSPOT_CONNECTED            kDevice_Is_iPhoneX ? NO : (APP_STATUSBAR_HEIGHT==(SYS_STATUSBAR_HEIGHT+HOTSPOT_STATUSBAR_HEIGHT)?YES:NO)
 
-#define kDevice_Is_iPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
+#define kDevice_Is_iPhoneX ([UIScreen mainScreen].bounds.size.height == 812 || [UIScreen mainScreen].bounds.size.height == 896)
 #define kStatusBarHeight (kDevice_Is_iPhoneX ? ([UIApplication sharedApplication].statusBarFrame.size.height == 64.f ? 44.f : [UIApplication sharedApplication].statusBarFrame.size.height) : (IS_HOTSPOT_CONNECTED ? 0.f : [UIApplication sharedApplication].statusBarFrame.size.height))
 
 #define kStatus_Bar_Bigger_than_20 [UIApplication sharedApplication].statusBarFrame.size.height > 20

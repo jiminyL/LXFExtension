@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9811096C2241E7EB00D6B398 /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 9811096B2241E7EB00D6B398 /* UINavigationController+FDFullscreenPopGesture.m */; };
+		983F21F92249D1F30043F476 /* LXF_FitView.m in Sources */ = {isa = PBXBuildFile; fileRef = 983F21F82249D1F30043F476 /* LXF_FitView.m */; };
 		986195632241D8D600A5385E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 986195622241D8D600A5385E /* AppDelegate.m */; };
 		986195662241D8D600A5385E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 986195652241D8D600A5385E /* ViewController.m */; };
 		986195692241D8D600A5385E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 986195672241D8D600A5385E /* Main.storyboard */; };
@@ -101,6 +102,8 @@
 /* Begin PBXFileReference section */
 		9811096A2241E7EB00D6B398 /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
 		9811096B2241E7EB00D6B398 /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
+		983F21F72249D1F30043F476 /* LXF_FitView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXF_FitView.h; sourceTree = "<group>"; };
+		983F21F82249D1F30043F476 /* LXF_FitView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXF_FitView.m; sourceTree = "<group>"; };
 		9861955E2241D8D600A5385E /* LXFExtension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LXFExtension.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		986195612241D8D600A5385E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		986195622241D8D600A5385E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -559,28 +562,28 @@
 		9871FAB92241D90E00A2BB73 /* LXF_Toolkit */ = {
 			isa = PBXGroup;
 			children = (
+				9871FAC52241D90E00A2BB73 /* NSDictionary+LXFNilSafe.h */,
 				9871FABA2241D90E00A2BB73 /* NSDictionary+LXFNilSafe.m */,
+				9871FACB2241D90E00A2BB73 /* UIImage+LXFToolkit.h */,
 				9871FABB2241D90E00A2BB73 /* UIImage+LXFToolkit.m */,
+				9871FACA2241D90E00A2BB73 /* UIView+LXFSizes.h */,
 				9871FABC2241D90E00A2BB73 /* UIView+LXFSizes.m */,
 				9871FABD2241D90E00A2BB73 /* UIView+LXFLayout.h */,
-				9871FABE2241D90E00A2BB73 /* NSObject+LXFSwizzing.m */,
-				9871FABF2241D90E00A2BB73 /* NSData+LXFAES.m */,
-				9871FAC02241D90E00A2BB73 /* NSString+LXFToolkit.m */,
-				9871FAC12241D90E00A2BB73 /* NSMutableArray+LXFSwizzling.m */,
-				9871FAC22241D90E00A2BB73 /* UIColor+LXFToolkit.h */,
-				9871FAC32241D90E00A2BB73 /* UIView+LXFToast.h */,
-				9871FAC42241D90E00A2BB73 /* NSDate+LXFTooKit.h */,
-				9871FAC52241D90E00A2BB73 /* NSDictionary+LXFNilSafe.h */,
-				9871FAC62241D90E00A2BB73 /* NSString+LXFToolkit.h */,
-				9871FAC72241D90E00A2BB73 /* NSData+LXFAES.h */,
-				9871FAC82241D90E00A2BB73 /* NSObject+LXFSwizzing.h */,
 				9871FAC92241D90E00A2BB73 /* UIView+LXFLayout.m */,
-				9871FACA2241D90E00A2BB73 /* UIView+LXFSizes.h */,
-				9871FACB2241D90E00A2BB73 /* UIImage+LXFToolkit.h */,
-				9871FACC2241D90E00A2BB73 /* NSDate+LXFTooKit.m */,
-				9871FACD2241D90E00A2BB73 /* UIView+LXFToast.m */,
-				9871FACE2241D90E00A2BB73 /* UIColor+LXFToolkit.m */,
+				9871FAC82241D90E00A2BB73 /* NSObject+LXFSwizzing.h */,
+				9871FABE2241D90E00A2BB73 /* NSObject+LXFSwizzing.m */,
+				9871FAC72241D90E00A2BB73 /* NSData+LXFAES.h */,
+				9871FABF2241D90E00A2BB73 /* NSData+LXFAES.m */,
+				9871FAC62241D90E00A2BB73 /* NSString+LXFToolkit.h */,
+				9871FAC02241D90E00A2BB73 /* NSString+LXFToolkit.m */,
 				9871FACF2241D90E00A2BB73 /* NSMutableArray+LXFSwizzling.h */,
+				9871FAC12241D90E00A2BB73 /* NSMutableArray+LXFSwizzling.m */,
+				9871FAC32241D90E00A2BB73 /* UIView+LXFToast.h */,
+				9871FACD2241D90E00A2BB73 /* UIView+LXFToast.m */,
+				9871FACC2241D90E00A2BB73 /* NSDate+LXFTooKit.m */,
+				9871FAC42241D90E00A2BB73 /* NSDate+LXFTooKit.h */,
+				9871FAC22241D90E00A2BB73 /* UIColor+LXFToolkit.h */,
+				9871FACE2241D90E00A2BB73 /* UIColor+LXFToolkit.m */,
 			);
 			path = LXF_Toolkit;
 			sourceTree = "<group>";
@@ -588,19 +591,21 @@
 		9871FAD02241D90E00A2BB73 /* CommonViews */ = {
 			isa = PBXGroup;
 			children = (
+				9871FAEC2241D90E00A2BB73 /* LXF_Common.h */,
+				9871FADA2241D90E00A2BB73 /* LXF_Common.m */,
+				983F21F72249D1F30043F476 /* LXF_FitView.h */,
+				983F21F82249D1F30043F476 /* LXF_FitView.m */,
+				9871FADB2241D90E00A2BB73 /* LXF_AlertView.h */,
+				9871FAF22241D90E00A2BB73 /* LXF_AlertView.m */,
 				9871FAD12241D90E00A2BB73 /* LXF_Timer.h */,
+				9871FAEB2241D90E00A2BB73 /* LXF_Timer.m */,
+				9871FAEA2241D90E00A2BB73 /* LXF_Label.h */,
 				9871FAD22241D90E00A2BB73 /* LXF_Label.m */,
 				9871FAD32241D90E00A2BB73 /* LXF_PlaceHoderTextView.h */,
-				9871FAD42241D90E00A2BB73 /* LXF_BannerView */,
-				9871FADA2241D90E00A2BB73 /* LXF_Common.m */,
-				9871FADB2241D90E00A2BB73 /* LXF_AlertView.h */,
-				9871FADC2241D90E00A2BB73 /* LXFBrowser */,
 				9871FAE92241D90E00A2BB73 /* LXF_PlaceHoderTextView.m */,
-				9871FAEA2241D90E00A2BB73 /* LXF_Label.h */,
-				9871FAEB2241D90E00A2BB73 /* LXF_Timer.m */,
-				9871FAEC2241D90E00A2BB73 /* LXF_Common.h */,
+				9871FAD42241D90E00A2BB73 /* LXF_BannerView */,
+				9871FADC2241D90E00A2BB73 /* LXFBrowser */,
 				9871FAED2241D90E00A2BB73 /* LXFSwitchBar */,
-				9871FAF22241D90E00A2BB73 /* LXF_AlertView.m */,
 			);
 			path = CommonViews;
 			sourceTree = "<group>";
@@ -608,9 +613,9 @@
 		9871FAD42241D90E00A2BB73 /* LXF_BannerView */ = {
 			isa = PBXGroup;
 			children = (
+				9871FAD92241D90E00A2BB73 /* LXF_BannerView.h */,
 				9871FAD52241D90E00A2BB73 /* LXF_BannerView.m */,
 				9871FAD62241D90E00A2BB73 /* StyledPageControl */,
-				9871FAD92241D90E00A2BB73 /* LXF_BannerView.h */,
 			);
 			path = LXF_BannerView;
 			sourceTree = "<group>";
@@ -627,11 +632,11 @@
 		9871FADC2241D90E00A2BB73 /* LXFBrowser */ = {
 			isa = PBXGroup;
 			children = (
-				9871FADD2241D90E00A2BB73 /* LXF_BrowserCollectionViewCell.m */,
-				9871FADE2241D90E00A2BB73 /* DACircularProgress */,
 				9871FAE12241D90E00A2BB73 /* LXF_BrowserViewController.h */,
 				9871FAE22241D90E00A2BB73 /* LXF_BrowserViewController.m */,
 				9871FAE32241D90E00A2BB73 /* LXF_BrowserCollectionViewCell.h */,
+				9871FADD2241D90E00A2BB73 /* LXF_BrowserCollectionViewCell.m */,
+				9871FADE2241D90E00A2BB73 /* DACircularProgress */,
 				9871FAE42241D90E00A2BB73 /* YLGIFImage */,
 			);
 			path = LXFBrowser;
@@ -640,8 +645,8 @@
 		9871FADE2241D90E00A2BB73 /* DACircularProgress */ = {
 			isa = PBXGroup;
 			children = (
-				9871FADF2241D90E00A2BB73 /* LXF_DACircularProgressView.m */,
 				9871FAE02241D90E00A2BB73 /* LXF_DACircularProgressView.h */,
+				9871FADF2241D90E00A2BB73 /* LXF_DACircularProgressView.m */,
 			);
 			path = DACircularProgress;
 			sourceTree = "<group>";
@@ -649,10 +654,10 @@
 		9871FAE42241D90E00A2BB73 /* YLGIFImage */ = {
 			isa = PBXGroup;
 			children = (
-				9871FAE52241D90E00A2BB73 /* LXF_YLImageView.m */,
-				9871FAE62241D90E00A2BB73 /* LXF_YLGIFImage.m */,
 				9871FAE72241D90E00A2BB73 /* LXF_YLImageView.h */,
+				9871FAE52241D90E00A2BB73 /* LXF_YLImageView.m */,
 				9871FAE82241D90E00A2BB73 /* LXF_YLGIFImage.h */,
+				9871FAE62241D90E00A2BB73 /* LXF_YLGIFImage.m */,
 			);
 			path = YLGIFImage;
 			sourceTree = "<group>";
@@ -661,9 +666,9 @@
 			isa = PBXGroup;
 			children = (
 				9871FAEE2241D90E00A2BB73 /* LXFSwitchBarButton.h */,
+				9871FAF12241D90E00A2BB73 /* LXFSwitchBarButton.m */,
 				9871FAEF2241D90E00A2BB73 /* LXFSwitchBar.h */,
 				9871FAF02241D90E00A2BB73 /* LXFSwitchBar.m */,
-				9871FAF12241D90E00A2BB73 /* LXFSwitchBarButton.m */,
 			);
 			path = LXFSwitchBar;
 			sourceTree = "<group>";
@@ -684,8 +689,8 @@
 		9871FAFA2241D90E00A2BB73 /* lxf_FeatureViews */ = {
 			isa = PBXGroup;
 			children = (
-				9871FAFB2241D90E00A2BB73 /* LXF_FloatView.m */,
 				9871FAFC2241D90E00A2BB73 /* LXF_FloatView.h */,
+				9871FAFB2241D90E00A2BB73 /* LXF_FloatView.m */,
 			);
 			path = lxf_FeatureViews;
 			sourceTree = "<group>";
@@ -713,8 +718,8 @@
 		9871FB042241D90E00A2BB73 /* DataHelper */ = {
 			isa = PBXGroup;
 			children = (
-				9871FB052241D90E00A2BB73 /* LXF_DataHelper.m */,
 				9871FB062241D90E00A2BB73 /* LXF_DataHelper.h */,
+				9871FB052241D90E00A2BB73 /* LXF_DataHelper.m */,
 			);
 			path = DataHelper;
 			sourceTree = "<group>";
@@ -852,6 +857,7 @@
 				9871FB222241D90E00A2BB73 /* MJRefreshGifHeader.m in Sources */,
 				9871FB1F2241D90E00A2BB73 /* MJRefreshAutoNormalFooter.m in Sources */,
 				9871FB4B2241D90E00A2BB73 /* LXF_YLImageView.m in Sources */,
+				983F21F92249D1F30043F476 /* LXF_FitView.m in Sources */,
 				9871FB0A2241D90E00A2BB73 /* MJPropertyType.m in Sources */,
 				9871FB3C2241D90E00A2BB73 /* NSObject+LXFSwizzing.m in Sources */,
 				9871FB142241D90E00A2BB73 /* UIScrollView+MJRefresh.m in Sources */,
