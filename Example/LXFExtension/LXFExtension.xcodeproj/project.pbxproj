@@ -295,6 +295,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		980BB1422282B8EF003AB87C /* LXF_PhotoAsset */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LXF_PhotoAsset;
+			sourceTree = "<group>";
+		};
 		981109692241E7EB00D6B398 /* FDFullscreenPopGesture */ = {
 			isa = PBXGroup;
 			children = (
@@ -328,6 +335,7 @@
 				986195622241D8D600A5385E /* AppDelegate.m */,
 				986195642241D8D600A5385E /* ViewController.h */,
 				986195652241D8D600A5385E /* ViewController.m */,
+				980BB1422282B8EF003AB87C /* LXF_PhotoAsset */,
 				986195672241D8D600A5385E /* Main.storyboard */,
 				9861956A2241D8D700A5385E /* Assets.xcassets */,
 				9861956C2241D8D700A5385E /* LaunchScreen.storyboard */,

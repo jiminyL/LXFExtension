@@ -54,7 +54,9 @@
     dispatch_source_set_event_handler(self.timer, ^{
         if (self.canAutoScroll && !self.frozenTime) {
             [mself.scrollView setContentOffset:CGPointMake(mself.scrollView.contentOffset.x + mself.scrollView.bounds.size.width, 0.f) animated:YES];
-            [mself scrollToNext];
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.35 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                [mself scrollToNext];
+            });
         }
     });
     dispatch_resume(self.timer);
