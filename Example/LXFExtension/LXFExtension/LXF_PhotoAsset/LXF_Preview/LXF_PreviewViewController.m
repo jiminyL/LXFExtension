@@ -8,25 +8,67 @@
 
 #import "LXF_PreviewViewController.h"
 
+#import "LXF_PreviewScrollView.h"
+
 @interface LXF_PreviewViewController ()
+
+@property (nonatomic, strong) LXF_PreviewScrollView *scrollView;
+
+@property (nonatomic, strong) PHFetchResult *fetchResult;
+@property (nonatomic, copy) NSArray<PHAsset *> *photos;
+@property (nonatomic) NSInteger currentIndex;
 
 @end
 
 @implementation LXF_PreviewViewController
 
+- (instancetype)initWithFetchResult:(PHFetchResult *)fetchResult OrPhotos:(NSArray *)photos andIndex:(NSInteger)index {
+    if (self = [super init]) {
+        self.fetchResult = fetchResult;
+        self.photos = photos;
+        self.currentIndex = index;
+    }
+    return self;
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    
+    [self.navigationController setNavigationBarHidden:NO];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    [self.navigationController setNavigationBarHidden:YES];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    UIView *firstV = [[UIView alloc] init];
+    [self.view addSubview:firstV];
+    
+    [self refreshViews];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)viewDidLayoutSubviews {
+    [self refreshViews];
 }
-*/
+
+- (void)refreshViews {
+    [self.scrollView setFrame:self.view.bounds];
+}
+
+#pragma mark - Lazy
+- (LXF_PreviewScrollView *)scrollView {
+    if (!_scrollView) {
+        _scrollView = [[LXF_PreviewScrollView alloc] initWithFetchResult:self.fetchResult OrPhotos:self.photos andIndex:self.currentIndex];
+        [self.view addSubview:_scrollView];
+    }
+    return _scrollView;
+}
 
 @end

@@ -7,8 +7,17 @@
 //
 
 #import "LXF_AlbumViewController.h"
+#import "LXF_PhotoGridViewController.h"
 
-@interface LXF_AlbumViewController ()
+#import "LXF_AlbumList.h"
+
+#import "LXF_PhotoManager.h"
+
+@interface LXF_AlbumViewController ()<PHPhotoLibraryChangeObserver>
+
+@property (nonatomic, strong) LXF_AlbumList *albumList;
+
+@property (nonatomic, strong) LXF_PhotoManager *manager;
 
 @end
 
@@ -16,17 +25,60 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    self.title = @"相册";
+    
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStylePlain target:self action:@selector(backButtonEvent)];
+    
+    [[PHPhotoLibrary sharedPhotoLibrary] registerChangeObserver:self];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)viewWillLayoutSubviews {
+    [self refreshViews];
 }
-*/
+
+- (void)refreshViews {
+    [self.albumList setFrame:self.view.bounds];
+}
+
+#pragma mark - PHPhotoLibraryChangeObserver
+- (void)photoLibraryDidChange:(PHChange *)changeInstance {
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self refreshViews];
+    });
+}
+
+#pragma mark - ButtonEvent
+- (void)backButtonEvent {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)albumEvent:(LXF_AlbumModel *)album {
+    self.manager.currentCollection = album.result;
+    LXF_PhotoGridViewController *vc = [[LXF_PhotoGridViewController alloc] initWithManager:self.manager];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+#pragma mark - Lazy
+- (LXF_AlbumList *)albumList {
+    if (!_albumList) {
+        __weak typeof(self) mself = self;
+        _albumList = [[LXF_AlbumList alloc] init];
+        _albumList.didTouchAlbum = ^(LXF_AlbumModel * _Nonnull album) {
+            [mself albumEvent:album];
+        };
+        [self.view addSubview:_albumList];
+    }
+    return _albumList;
+}
+
+- (LXF_PhotoManager *)manager
+{
+    if (!_manager) {
+        _manager = [[LXF_PhotoManager alloc] init];
+    }
+    return _manager;
+}
+
 
 @end

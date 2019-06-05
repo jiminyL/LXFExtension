@@ -19,6 +19,7 @@
 #import "UIColor+LXFToolkit.h"
 #import "UIImage+LXFToolkit.h"
 #import "LXF_DataHelper.h"
+#import "LXF_TableView.h"
 
 #define isIOS7OrLater ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.f)
 #define isIOS11OrLater ([[[UIDevice currentDevice] systemVersion] floatValue] >= 11.f)

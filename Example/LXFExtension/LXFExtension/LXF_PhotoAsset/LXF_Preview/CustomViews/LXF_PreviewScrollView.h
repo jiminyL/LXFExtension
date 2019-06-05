@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LXF_PhotoManager.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface LXF_PreviewScrollView : UIView
+
+- (instancetype)initWithFetchResult:(PHFetchResult *)fetchResult OrPhotos:(NSArray *)photos andIndex:(NSInteger)index;
 
 @end
 

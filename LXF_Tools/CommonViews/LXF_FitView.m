@@ -12,15 +12,15 @@
 
 @implementation LXF_FitView
 
-- (void)setFrame:(CGRect)frame
-{
+- (void)setFrame:(CGRect)frame {
     [super setFrame:frame];
-    
-    
 }
 
-- (void)refreshViews
-{
+- (void)layoutSubviews {
+    [self refreshViews];
+}
+
+- (void)refreshViews {
     if (self.height == HEIGHT_TO_Fit && self.content_height > 0) {
         self.height = self.content_height;
     }

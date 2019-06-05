@@ -7,11 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "LXF_PhotoExtension.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface LXF_PhotoManager : NSObject
 
+@property (nonatomic, strong) NSMutableArray<PHAsset *> *didSelectedPhotos;
+@property (nonatomic, strong) PHAssetCollection *currentCollection;
+@property (nonatomic, strong) PHFetchResult *currentFetchResult;
+
 @end
+
 
 NS_ASSUME_NONNULL_END

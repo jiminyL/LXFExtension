@@ -17,8 +17,7 @@
 
 @implementation LXF_FloatView
 
-- (instancetype)initWithLocationStyle:(FloatViewContentLocation)location andCustomSize:(BOOL)customSize
-{
+- (instancetype)initWithLocationStyle:(FloatViewContentLocation)location andCustomSize:(BOOL)customSize {
     if (self = [super init]) {
         self.location = location;
         self.customSize = customSize;
@@ -26,22 +25,17 @@
     return self;
 }
 
-- (void)setFrame:(CGRect)frame
-{
-    [super setFrame:frame];
-    
-    [self initViews];
+- (void)layoutSubviews {
+    [self refreshViews];
 }
 
-- (void)setContentView:(UIView *)contentView
-{
+- (void)setContentView:(UIView *)contentView {
     _contentView = contentView;
     
-    [self initViews];
+    [self refreshViews];
 }
 
-- (void)initViews
-{
+- (void)refreshViews {
     if (!self.bgView) {
         self.bgView = [[UIView alloc] init];
         [self addSubview:self.bgView];
@@ -66,8 +60,7 @@
     [self.contentView setFrame:CGRectMake((self.width - width)/2, self.height, self.customSize ? self.contentView.width : self.width, height)];
 }
 
-- (void)changeContentViewFrame
-{
+- (void)changeContentViewFrame {
     __weak typeof(self) mself = self;
     [UIView animateWithDuration:0.2 animations:^{
         CGFloat height = mself.customSize ? mself.contentView.height : (8.f/10)*mself.height;
@@ -79,13 +72,11 @@
     }];
 }
 
-- (void)bgViewTouchEvent
-{
+- (void)bgViewTouchEvent {
     [self hidden];
 }
 
-- (void)show
-{
+- (void)show {
     [self setHidden:NO];
     __weak typeof(self) mself = self;
     [UIView animateWithDuration:0.35 animations:^{
@@ -98,8 +89,7 @@
     }];
 }
 
-- (void)hidden
-{
+- (void)hidden {
     __weak typeof(self) mself = self;
     [UIView animateWithDuration:0.35 animations:^{
         CGFloat height = mself.customSize ? mself.contentView.height : (8.f/10)*mself.height;

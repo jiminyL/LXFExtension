@@ -7,6 +7,7 @@
 //
 
 #import "LXF_PhotoAssetNavigationController.h"
+#import "LXF_AlbumViewController.h"
 
 @interface LXF_PhotoAssetNavigationController ()
 
@@ -14,19 +15,18 @@
 
 @implementation LXF_PhotoAssetNavigationController
 
+- (instancetype)init
+{
+    LXF_AlbumViewController *albumVC = [[LXF_AlbumViewController alloc] init];
+    if (self = [super initWithRootViewController:albumVC]) {
+        
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

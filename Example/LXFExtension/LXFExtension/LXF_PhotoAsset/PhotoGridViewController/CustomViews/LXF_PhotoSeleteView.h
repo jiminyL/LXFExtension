@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface LXF_PhotoSeleteView : UIView
 
+@property (nonatomic) BOOL didSelected;
+
 @end
 
 NS_ASSUME_NONNULL_END

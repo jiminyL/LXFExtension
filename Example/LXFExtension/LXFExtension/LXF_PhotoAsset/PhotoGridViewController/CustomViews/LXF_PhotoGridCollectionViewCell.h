@@ -7,10 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LXF_PhotoExtension.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface LXF_PhotoGridCollectionViewCell : UICollectionViewCell
+
+@property (nonatomic, copy) void (^didTouchImageView)(PHAsset *asset);
+@property (nonatomic, copy) void (^didChangeSeleted)(PHAsset *asset);
+
+@property (nonatomic, strong) PHAsset *asset;
+@property (nonatomic) BOOL didSelected;
 
 @end
 

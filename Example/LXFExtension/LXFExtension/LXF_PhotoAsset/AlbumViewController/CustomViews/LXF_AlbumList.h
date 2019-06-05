@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+@class LXF_AlbumModel;
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface LXF_AlbumList : UIView
+
+@property (nonatomic, copy) void (^didTouchAlbum)(LXF_AlbumModel *album);
 
 @end
 

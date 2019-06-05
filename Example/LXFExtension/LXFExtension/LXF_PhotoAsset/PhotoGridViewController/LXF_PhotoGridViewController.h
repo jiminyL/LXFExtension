@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LXF_PhotoManager.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface LXF_PhotoGridViewController : UIViewController
+
+- (instancetype)initWithManager:(LXF_PhotoManager *)manager;
 
 @end
 

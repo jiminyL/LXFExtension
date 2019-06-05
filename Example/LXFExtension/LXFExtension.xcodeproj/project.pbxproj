@@ -7,14 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		980BB14A2282BA31003AB87C /* LXF_AlbumList.m in Sources */ = {isa = PBXBuildFile; fileRef = 980BB1492282BA31003AB87C /* LXF_AlbumList.m */; };
+		980BB14D2282BAE7003AB87C /* LXF_TableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 980BB14C2282BAE6003AB87C /* LXF_TableView.m */; };
 		9811096C2241E7EB00D6B398 /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 9811096B2241E7EB00D6B398 /* UINavigationController+FDFullscreenPopGesture.m */; };
+		981907D92283C43D00C39CE2 /* LXF_AlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 981907D82283C43D00C39CE2 /* LXF_AlbumViewController.m */; };
+		981907DC2283C45F00C39CE2 /* LXF_PhotoAssetNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 981907DB2283C45F00C39CE2 /* LXF_PhotoAssetNavigationController.m */; };
+		981907DF2283C72800C39CE2 /* LXF_AlbumModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 981907DE2283C72800C39CE2 /* LXF_AlbumModel.m */; };
+		981907E22283C76200C39CE2 /* LXF_AlbumTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 981907E12283C76200C39CE2 /* LXF_AlbumTableViewCell.m */; };
+		981907E62283C86200C39CE2 /* LXF_PhotoExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 981907E42283C86200C39CE2 /* LXF_PhotoExtension.m */; };
+		981907EC228403E100C39CE2 /* LXF_PhotoGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 981907EB228403E000C39CE2 /* LXF_PhotoGridViewController.m */; };
+		981907F22284045600C39CE2 /* LXF_PhotoGrid.m in Sources */ = {isa = PBXBuildFile; fileRef = 981907F12284045600C39CE2 /* LXF_PhotoGrid.m */; };
+		981907F5228407C700C39CE2 /* LXF_PhotoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 981907F4228407C700C39CE2 /* LXF_PhotoModel.m */; };
+		981907F822840A5500C39CE2 /* LXF_PhotoGridCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 981907F722840A5500C39CE2 /* LXF_PhotoGridCollectionViewCell.m */; };
 		983F21F92249D1F30043F476 /* LXF_FitView.m in Sources */ = {isa = PBXBuildFile; fileRef = 983F21F82249D1F30043F476 /* LXF_FitView.m */; };
+		9857FDE722854EF200C82A66 /* LXF_Photo_unSeleted.png in Resources */ = {isa = PBXBuildFile; fileRef = 9857FDE122854EF100C82A66 /* LXF_Photo_unSeleted.png */; };
+		9857FDE822854EF200C82A66 /* LXF_Photo_unSeleted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9857FDE222854EF100C82A66 /* LXF_Photo_unSeleted@2x.png */; };
+		9857FDE922854EF200C82A66 /* LXF_Photo_Seleted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9857FDE322854EF100C82A66 /* LXF_Photo_Seleted@2x.png */; };
+		9857FDEA22854EF200C82A66 /* LXF_Photo_unSeleted@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9857FDE422854EF100C82A66 /* LXF_Photo_unSeleted@3x.png */; };
+		9857FDEB22854EF200C82A66 /* LXF_Photo_Seleted@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9857FDE522854EF100C82A66 /* LXF_Photo_Seleted@3x.png */; };
+		9857FDEC22854EF200C82A66 /* LXF_Photo_Seleted.png in Resources */ = {isa = PBXBuildFile; fileRef = 9857FDE622854EF100C82A66 /* LXF_Photo_Seleted.png */; };
+		9857FDEF22854F2900C82A66 /* LXF_PhotoSeleteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9857FDEE22854F2900C82A66 /* LXF_PhotoSeleteView.m */; };
+		9857FDF32285610300C82A66 /* LXF_PreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9857FDF22285610300C82A66 /* LXF_PreviewViewController.m */; };
+		9857FDF82285627500C82A66 /* LXF_PreviewScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9857FDF72285627500C82A66 /* LXF_PreviewScrollView.m */; };
 		986195632241D8D600A5385E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 986195622241D8D600A5385E /* AppDelegate.m */; };
 		986195662241D8D600A5385E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 986195652241D8D600A5385E /* ViewController.m */; };
 		986195692241D8D600A5385E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 986195672241D8D600A5385E /* Main.storyboard */; };
 		9861956B2241D8D700A5385E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9861956A2241D8D700A5385E /* Assets.xcassets */; };
 		9861956E2241D8D700A5385E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9861956C2241D8D700A5385E /* LaunchScreen.storyboard */; };
 		986195712241D8D700A5385E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 986195702241D8D700A5385E /* main.m */; };
+		9867E3BE22854ACA00B197A7 /* LXF_PhotoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9867E3BD22854ACA00B197A7 /* LXF_PhotoManager.m */; };
 		9871FB072241D90E00A2BB73 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 9871FA492241D90E00A2BB73 /* GTMBase64.m */; };
 		9871FB082241D90E00A2BB73 /* OpenUDID.m in Sources */ = {isa = PBXBuildFile; fileRef = 9871FA4B2241D90E00A2BB73 /* OpenUDID.m */; };
 		9871FB092241D90E00A2BB73 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9871FA4C2241D90E00A2BB73 /* README.md */; };
@@ -100,10 +121,44 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		980BB1482282BA31003AB87C /* LXF_AlbumList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXF_AlbumList.h; sourceTree = "<group>"; };
+		980BB1492282BA31003AB87C /* LXF_AlbumList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXF_AlbumList.m; sourceTree = "<group>"; };
+		980BB14B2282BAE6003AB87C /* LXF_TableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXF_TableView.h; sourceTree = "<group>"; };
+		980BB14C2282BAE6003AB87C /* LXF_TableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXF_TableView.m; sourceTree = "<group>"; };
 		9811096A2241E7EB00D6B398 /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
 		9811096B2241E7EB00D6B398 /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
+		981907D72283C43D00C39CE2 /* LXF_AlbumViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXF_AlbumViewController.h; sourceTree = "<group>"; };
+		981907D82283C43D00C39CE2 /* LXF_AlbumViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXF_AlbumViewController.m; sourceTree = "<group>"; };
+		981907DA2283C45F00C39CE2 /* LXF_PhotoAssetNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXF_PhotoAssetNavigationController.h; sourceTree = "<group>"; };
+		981907DB2283C45F00C39CE2 /* LXF_PhotoAssetNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXF_PhotoAssetNavigationController.m; sourceTree = "<group>"; };
+		981907DD2283C72800C39CE2 /* LXF_AlbumModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXF_AlbumModel.h; sourceTree = "<group>"; };
+		981907DE2283C72800C39CE2 /* LXF_AlbumModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXF_AlbumModel.m; sourceTree = "<group>"; };
+		981907E02283C76200C39CE2 /* LXF_AlbumTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXF_AlbumTableViewCell.h; sourceTree = "<group>"; };
+		981907E12283C76200C39CE2 /* LXF_AlbumTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXF_AlbumTableViewCell.m; sourceTree = "<group>"; };
+		981907E42283C86200C39CE2 /* LXF_PhotoExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXF_PhotoExtension.m; sourceTree = "<group>"; };
+		981907E52283C86200C39CE2 /* LXF_PhotoExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXF_PhotoExtension.h; sourceTree = "<group>"; };
+		981907EA228403E000C39CE2 /* LXF_PhotoGridViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXF_PhotoGridViewController.h; sourceTree = "<group>"; };
+		981907EB228403E000C39CE2 /* LXF_PhotoGridViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXF_PhotoGridViewController.m; sourceTree = "<group>"; };
+		981907F02284045600C39CE2 /* LXF_PhotoGrid.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXF_PhotoGrid.h; sourceTree = "<group>"; };
+		981907F12284045600C39CE2 /* LXF_PhotoGrid.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXF_PhotoGrid.m; sourceTree = "<group>"; };
+		981907F3228407C700C39CE2 /* LXF_PhotoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXF_PhotoModel.h; sourceTree = "<group>"; };
+		981907F4228407C700C39CE2 /* LXF_PhotoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXF_PhotoModel.m; sourceTree = "<group>"; };
+		981907F622840A5500C39CE2 /* LXF_PhotoGridCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXF_PhotoGridCollectionViewCell.h; sourceTree = "<group>"; };
+		981907F722840A5500C39CE2 /* LXF_PhotoGridCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXF_PhotoGridCollectionViewCell.m; sourceTree = "<group>"; };
 		983F21F72249D1F30043F476 /* LXF_FitView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXF_FitView.h; sourceTree = "<group>"; };
 		983F21F82249D1F30043F476 /* LXF_FitView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXF_FitView.m; sourceTree = "<group>"; };
+		9857FDE122854EF100C82A66 /* LXF_Photo_unSeleted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LXF_Photo_unSeleted.png; sourceTree = "<group>"; };
+		9857FDE222854EF100C82A66 /* LXF_Photo_unSeleted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LXF_Photo_unSeleted@2x.png"; sourceTree = "<group>"; };
+		9857FDE322854EF100C82A66 /* LXF_Photo_Seleted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LXF_Photo_Seleted@2x.png"; sourceTree = "<group>"; };
+		9857FDE422854EF100C82A66 /* LXF_Photo_unSeleted@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LXF_Photo_unSeleted@3x.png"; sourceTree = "<group>"; };
+		9857FDE522854EF100C82A66 /* LXF_Photo_Seleted@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LXF_Photo_Seleted@3x.png"; sourceTree = "<group>"; };
+		9857FDE622854EF100C82A66 /* LXF_Photo_Seleted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LXF_Photo_Seleted.png; sourceTree = "<group>"; };
+		9857FDED22854F2800C82A66 /* LXF_PhotoSeleteView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXF_PhotoSeleteView.h; sourceTree = "<group>"; };
+		9857FDEE22854F2900C82A66 /* LXF_PhotoSeleteView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXF_PhotoSeleteView.m; sourceTree = "<group>"; };
+		9857FDF12285610300C82A66 /* LXF_PreviewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXF_PreviewViewController.h; sourceTree = "<group>"; };
+		9857FDF22285610300C82A66 /* LXF_PreviewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXF_PreviewViewController.m; sourceTree = "<group>"; };
+		9857FDF62285627500C82A66 /* LXF_PreviewScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXF_PreviewScrollView.h; sourceTree = "<group>"; };
+		9857FDF72285627500C82A66 /* LXF_PreviewScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXF_PreviewScrollView.m; sourceTree = "<group>"; };
 		9861955E2241D8D600A5385E /* LXFExtension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LXFExtension.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		986195612241D8D600A5385E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		986195622241D8D600A5385E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -114,6 +169,8 @@
 		9861956D2241D8D700A5385E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9861956F2241D8D700A5385E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		986195702241D8D700A5385E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9867E3BC22854ACA00B197A7 /* LXF_PhotoManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXF_PhotoManager.h; sourceTree = "<group>"; };
+		9867E3BD22854ACA00B197A7 /* LXF_PhotoManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXF_PhotoManager.m; sourceTree = "<group>"; };
 		9871FA472241D90E00A2BB73 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
 		9871FA482241D90E00A2BB73 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
 		9871FA492241D90E00A2BB73 /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
@@ -298,8 +355,35 @@
 		980BB1422282B8EF003AB87C /* LXF_PhotoAsset */ = {
 			isa = PBXGroup;
 			children = (
+				981907E32283C85100C39CE2 /* Manager */,
+				981907DA2283C45F00C39CE2 /* LXF_PhotoAssetNavigationController.h */,
+				981907DB2283C45F00C39CE2 /* LXF_PhotoAssetNavigationController.m */,
+				981907D62283C41F00C39CE2 /* AlbumViewController */,
+				981907E7228403BA00C39CE2 /* PhotoGridViewController */,
+				9857FDF02285607200C82A66 /* LXF_Preview */,
+				9857FDE022854E9E00C82A66 /* Images */,
 			);
 			path = LXF_PhotoAsset;
+			sourceTree = "<group>";
+		};
+		980BB1462282B9F4003AB87C /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				980BB1482282BA31003AB87C /* LXF_AlbumList.h */,
+				980BB1492282BA31003AB87C /* LXF_AlbumList.m */,
+				981907E02283C76200C39CE2 /* LXF_AlbumTableViewCell.h */,
+				981907E12283C76200C39CE2 /* LXF_AlbumTableViewCell.m */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		980BB1472282B9F4003AB87C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				981907DD2283C72800C39CE2 /* LXF_AlbumModel.h */,
+				981907DE2283C72800C39CE2 /* LXF_AlbumModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		981109692241E7EB00D6B398 /* FDFullscreenPopGesture */ = {
@@ -309,6 +393,102 @@
 				9811096B2241E7EB00D6B398 /* UINavigationController+FDFullscreenPopGesture.m */,
 			);
 			path = FDFullscreenPopGesture;
+			sourceTree = "<group>";
+		};
+		981907D62283C41F00C39CE2 /* AlbumViewController */ = {
+			isa = PBXGroup;
+			children = (
+				981907D72283C43D00C39CE2 /* LXF_AlbumViewController.h */,
+				981907D82283C43D00C39CE2 /* LXF_AlbumViewController.m */,
+				980BB1462282B9F4003AB87C /* CustomViews */,
+				980BB1472282B9F4003AB87C /* Model */,
+			);
+			path = AlbumViewController;
+			sourceTree = "<group>";
+		};
+		981907E32283C85100C39CE2 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				9867E3BC22854ACA00B197A7 /* LXF_PhotoManager.h */,
+				9867E3BD22854ACA00B197A7 /* LXF_PhotoManager.m */,
+				981907E52283C86200C39CE2 /* LXF_PhotoExtension.h */,
+				981907E42283C86200C39CE2 /* LXF_PhotoExtension.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		981907E7228403BA00C39CE2 /* PhotoGridViewController */ = {
+			isa = PBXGroup;
+			children = (
+				981907EA228403E000C39CE2 /* LXF_PhotoGridViewController.h */,
+				981907EB228403E000C39CE2 /* LXF_PhotoGridViewController.m */,
+				981907E9228403D300C39CE2 /* CustomViews */,
+				981907E8228403D300C39CE2 /* Model */,
+			);
+			path = PhotoGridViewController;
+			sourceTree = "<group>";
+		};
+		981907E8228403D300C39CE2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				981907F3228407C700C39CE2 /* LXF_PhotoModel.h */,
+				981907F4228407C700C39CE2 /* LXF_PhotoModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		981907E9228403D300C39CE2 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				981907F02284045600C39CE2 /* LXF_PhotoGrid.h */,
+				981907F12284045600C39CE2 /* LXF_PhotoGrid.m */,
+				981907F622840A5500C39CE2 /* LXF_PhotoGridCollectionViewCell.h */,
+				981907F722840A5500C39CE2 /* LXF_PhotoGridCollectionViewCell.m */,
+				9857FDED22854F2800C82A66 /* LXF_PhotoSeleteView.h */,
+				9857FDEE22854F2900C82A66 /* LXF_PhotoSeleteView.m */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		9857FDE022854E9E00C82A66 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				9857FDE622854EF100C82A66 /* LXF_Photo_Seleted.png */,
+				9857FDE322854EF100C82A66 /* LXF_Photo_Seleted@2x.png */,
+				9857FDE522854EF100C82A66 /* LXF_Photo_Seleted@3x.png */,
+				9857FDE122854EF100C82A66 /* LXF_Photo_unSeleted.png */,
+				9857FDE222854EF100C82A66 /* LXF_Photo_unSeleted@2x.png */,
+				9857FDE422854EF100C82A66 /* LXF_Photo_unSeleted@3x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		9857FDF02285607200C82A66 /* LXF_Preview */ = {
+			isa = PBXGroup;
+			children = (
+				9857FDF12285610300C82A66 /* LXF_PreviewViewController.h */,
+				9857FDF22285610300C82A66 /* LXF_PreviewViewController.m */,
+				9857FDF52285611C00C82A66 /* CustomViews */,
+				9857FDF42285611600C82A66 /* Model */,
+			);
+			name = LXF_Preview;
+			path = LXFExtension/LXF_PhotoAsset/LXF_Preview;
+			sourceTree = SOURCE_ROOT;
+		};
+		9857FDF42285611600C82A66 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9857FDF52285611C00C82A66 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				9857FDF62285627500C82A66 /* LXF_PreviewScrollView.h */,
+				9857FDF72285627500C82A66 /* LXF_PreviewScrollView.m */,
+			);
+			path = CustomViews;
 			sourceTree = "<group>";
 		};
 		986195552241D8D600A5385E = {
@@ -601,6 +781,8 @@
 			children = (
 				9871FAEC2241D90E00A2BB73 /* LXF_Common.h */,
 				9871FADA2241D90E00A2BB73 /* LXF_Common.m */,
+				980BB14B2282BAE6003AB87C /* LXF_TableView.h */,
+				980BB14C2282BAE6003AB87C /* LXF_TableView.m */,
 				983F21F72249D1F30043F476 /* LXF_FitView.h */,
 				983F21F82249D1F30043F476 /* LXF_FitView.m */,
 				9871FADB2241D90E00A2BB73 /* LXF_AlertView.h */,
@@ -789,9 +971,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9857FDEB22854EF200C82A66 /* LXF_Photo_Seleted@3x.png in Resources */,
+				9857FDEA22854EF200C82A66 /* LXF_Photo_unSeleted@3x.png in Resources */,
 				9861956E2241D8D700A5385E /* LaunchScreen.storyboard in Resources */,
+				9857FDE722854EF200C82A66 /* LXF_Photo_unSeleted.png in Resources */,
 				9861956B2241D8D700A5385E /* Assets.xcassets in Resources */,
+				9857FDEC22854EF200C82A66 /* LXF_Photo_Seleted.png in Resources */,
 				9871FB092241D90E00A2BB73 /* README.md in Resources */,
+				9857FDE822854EF200C82A66 /* LXF_Photo_unSeleted@2x.png in Resources */,
+				9857FDE922854EF200C82A66 /* LXF_Photo_Seleted@2x.png in Resources */,
 				9871FB162241D90E00A2BB73 /* MJRefresh.bundle in Resources */,
 				986195692241D8D600A5385E /* Main.storyboard in Resources */,
 			);
@@ -811,15 +999,21 @@
 				9871FB582241D90E00A2BB73 /* LXF_DataHelper.m in Sources */,
 				9871FB4C2241D90E00A2BB73 /* LXF_YLGIFImage.m in Sources */,
 				9871FB202241D90E00A2BB73 /* MJRefreshNormalHeader.m in Sources */,
+				981907DC2283C45F00C39CE2 /* LXF_PhotoAssetNavigationController.m in Sources */,
 				9871FB172241D90E00A2BB73 /* UIScrollView+MJExtension.m in Sources */,
 				9871FB322241D90E00A2BB73 /* AFURLConnectionOperation.m in Sources */,
+				981907F5228407C700C39CE2 /* LXF_PhotoModel.m in Sources */,
 				9871FB182241D90E00A2BB73 /* NSBundle+MJRefresh.m in Sources */,
 				9871FB2B2241D90E00A2BB73 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				981907DF2283C72800C39CE2 /* LXF_AlbumModel.m in Sources */,
 				9871FB2D2241D90E00A2BB73 /* UIButton+AFNetworking.m in Sources */,
 				9871FB292241D90E00A2BB73 /* UIProgressView+AFNetworking.m in Sources */,
 				986195662241D8D600A5385E /* ViewController.m in Sources */,
+				981907D92283C43D00C39CE2 /* LXF_AlbumViewController.m in Sources */,
 				9871FB3F2241D90E00A2BB73 /* NSMutableArray+LXFSwizzling.m in Sources */,
+				9857FDF82285627500C82A66 /* LXF_PreviewScrollView.m in Sources */,
 				9871FB4A2241D90E00A2BB73 /* LXF_BrowserViewController.m in Sources */,
+				981907F822840A5500C39CE2 /* LXF_PhotoGridCollectionViewCell.m in Sources */,
 				9871FB412241D90E00A2BB73 /* NSDate+LXFTooKit.m in Sources */,
 				9871FB462241D90E00A2BB73 /* LXF_StyledPageControl.m in Sources */,
 				9871FB302241D90E00A2BB73 /* AFURLResponseSerialization.m in Sources */,
@@ -830,16 +1024,20 @@
 				9871FB2A2241D90E00A2BB73 /* UIRefreshControl+AFNetworking.m in Sources */,
 				986195712241D8D700A5385E /* main.m in Sources */,
 				9871FB132241D90E00A2BB73 /* MJFoundation.m in Sources */,
+				9867E3BE22854ACA00B197A7 /* LXF_PhotoManager.m in Sources */,
 				9871FB152241D90E00A2BB73 /* MJRefreshConst.m in Sources */,
+				981907E22283C76200C39CE2 /* LXF_AlbumTableViewCell.m in Sources */,
 				9871FB282241D90E00A2BB73 /* UIAlertView+AFNetworking.m in Sources */,
 				9871FB1E2241D90E00A2BB73 /* MJRefreshAutoGifFooter.m in Sources */,
 				9871FB212241D90E00A2BB73 /* MJRefreshStateHeader.m in Sources */,
 				9871FB262241D90E00A2BB73 /* MJRefreshAutoFooter.m in Sources */,
 				9871FB242241D90E00A2BB73 /* MJRefreshHeader.m in Sources */,
 				9871FB1A2241D90E00A2BB73 /* MJRefreshBackGifFooter.m in Sources */,
+				9857FDEF22854F2900C82A66 /* LXF_PhotoSeleteView.m in Sources */,
 				9871FB0F2241D90E00A2BB73 /* NSObject+MJProperty.m in Sources */,
 				9871FB3E2241D90E00A2BB73 /* NSString+LXFToolkit.m in Sources */,
 				986195632241D8D600A5385E /* AppDelegate.m in Sources */,
+				9857FDF32285610300C82A66 /* LXF_PreviewViewController.m in Sources */,
 				9871FB0C2241D90E00A2BB73 /* MJProperty.m in Sources */,
 				9871FB0B2241D90E00A2BB73 /* NSObject+MJKeyValue.m in Sources */,
 				9871FB1B2241D90E00A2BB73 /* MJRefreshBackStateFooter.m in Sources */,
@@ -854,8 +1052,12 @@
 				9871FB312241D90E00A2BB73 /* AFHTTPSessionManager.m in Sources */,
 				9871FB452241D90E00A2BB73 /* LXF_BannerView.m in Sources */,
 				9871FB472241D90E00A2BB73 /* LXF_Common.m in Sources */,
+				981907EC228403E100C39CE2 /* LXF_PhotoGridViewController.m in Sources */,
+				981907E62283C86200C39CE2 /* LXF_PhotoExtension.m in Sources */,
 				9871FB4E2241D90E00A2BB73 /* LXF_Timer.m in Sources */,
 				9871FB112241D90E00A2BB73 /* NSString+MJExtension.m in Sources */,
+				980BB14A2282BA31003AB87C /* LXF_AlbumList.m in Sources */,
+				981907F22284045600C39CE2 /* LXF_PhotoGrid.m in Sources */,
 				9871FB1C2241D90E00A2BB73 /* MJRefreshBackNormalFooter.m in Sources */,
 				9871FB0D2241D90E00A2BB73 /* NSObject+MJCoding.m in Sources */,
 				9811096C2241E7EB00D6B398 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
@@ -865,6 +1067,7 @@
 				9871FB222241D90E00A2BB73 /* MJRefreshGifHeader.m in Sources */,
 				9871FB1F2241D90E00A2BB73 /* MJRefreshAutoNormalFooter.m in Sources */,
 				9871FB4B2241D90E00A2BB73 /* LXF_YLImageView.m in Sources */,
+				980BB14D2282BAE7003AB87C /* LXF_TableView.m in Sources */,
 				983F21F92249D1F30043F476 /* LXF_FitView.m in Sources */,
 				9871FB0A2241D90E00A2BB73 /* MJPropertyType.m in Sources */,
 				9871FB3C2241D90E00A2BB73 /* NSObject+LXFSwizzing.m in Sources */,
@@ -1033,12 +1236,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9KHP4ZLTCD;
 				INFOPLIST_FILE = LXFExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.GuanNiu.LXFExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				RUN_CLANG_STATIC_ANALYZER = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1050,12 +1255,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9KHP4ZLTCD;
 				INFOPLIST_FILE = LXFExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.GuanNiu.LXFExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				RUN_CLANG_STATIC_ANALYZER = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

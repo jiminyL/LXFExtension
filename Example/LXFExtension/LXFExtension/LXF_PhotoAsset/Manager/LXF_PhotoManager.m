@@ -10,4 +10,13 @@
 
 @implementation LXF_PhotoManager
 
+- (NSMutableArray<PHAsset *> *)didSelectedPhotos
+{
+    if (!_didSelectedPhotos) {
+        _didSelectedPhotos = [[NSMutableArray alloc] init];
+    }
+    return _didSelectedPhotos;
+}
+
+
 @end

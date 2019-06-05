@@ -8,9 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+#import "LXF_AlbumModel.h"
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface LXF_AlbumTableViewCell : UITableViewCell
+
+@property (nonatomic, weak) LXF_AlbumModel *album;
+
++ (CGFloat)height;
 
 @end
 

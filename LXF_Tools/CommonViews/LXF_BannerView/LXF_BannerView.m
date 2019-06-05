@@ -32,8 +32,7 @@
 
 @implementation LXF_BannerView
 
-- (instancetype)init
-{
+- (instancetype)init {
     if (self = [super init]) {
         [self setBackgroundColor:[UIColor blackColor]];
         
@@ -45,8 +44,7 @@
     return self;
 }
 
-- (void)startTimer
-{
+- (void)startTimer {
     dispatch_queue_t queue = dispatch_get_main_queue();
     self.timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, queue);
     dispatch_source_set_timer(self.timer, 3 * NSEC_PER_SEC, 3 * NSEC_PER_SEC, 0 * NSEC_PER_SEC);
@@ -62,22 +60,17 @@
     dispatch_resume(self.timer);
 }
 
-- (void)stopTimer
-{
+- (void)stopTimer {
     if (self.timer) {
         dispatch_source_cancel(self.timer);
     }
 }
 
-- (void)setFrame:(CGRect)frame
-{
-    [super setFrame:frame];
-    
+- (void)layoutSubviews {
     [self refreshViews];
 }
 
-- (void)setBannerModelArr:(NSArray<LXFBannerModel *> *)bannerModelArr
-{
+- (void)setBannerModelArr:(NSArray<LXFBannerModel *> *)bannerModelArr {
     _bannerModelArr = bannerModelArr;
     
     [self refreshViews];
@@ -89,8 +82,7 @@
     }
 }
 
-- (void)setCurrentIndex:(NSInteger)currentIndex
-{
+- (void)setCurrentIndex:(NSInteger)currentIndex {
     _currentIndex = currentIndex;
     
     LXFBannerModel *currentBanner = self.bannerModelArr[currentIndex];
@@ -119,52 +111,20 @@
     self.pageControl.currentPage = (int)self.currentIndex;
 }
 
-- (void)refreshViews
-{
-    if (!self.scrollView) {
-        self.scrollView = [[UIScrollView alloc] init];
-        [self.scrollView setDelegate:self];
-        [self.scrollView setPagingEnabled:YES];
-        [self.scrollView setBounces:YES];
-        [self.scrollView setShowsHorizontalScrollIndicator:NO];
-        [self addSubview:self.scrollView];
-    }
+- (void)refreshViews {
     [self.scrollView setFrame:self.bounds];
     
-    if (!self.pageControl) {
-        self.pageControl = [[LXF_StyledPageControl alloc]initWithFrame:CGRectZero];
-        self.pageControl.coreNormalColor = [UIColor whiteColor];
-        self.pageControl.coreSelectedColor= [UIColor colorWithHex:@"#E62129"];
-        self.pageControl.numberOfPages = 0;
-        self.pageControl.currentPage = 0;
-        self.pageControl.strokeWidth = 0;
-        self.pageControl.diameter = 7;
-        self.pageControl.gapWidth = 20;
-        [self addSubview:self.pageControl];
-    }
     self.pageControl.numberOfPages = (int)self.bannerModelArr.count;
     CGFloat pageWidth = self.bannerModelArr.count * 12.f;
     [self.pageControl setFrame:CGRectMake((self.width - pageWidth)/2, self.height - 25.f, pageWidth, 12.f)];
     
     CGFloat offsetX = 0.f;
-    if (!self.preIV) {
-        self.preIV = [[UIImageView alloc] init];
-        [self.scrollView addSubview:self.preIV];
-    }
     [self.preIV setFrame:CGRectMake(offsetX, 0.f, self.bounds.size.width, self.bounds.size.height)];
     offsetX += self.bounds.size.width;
     
-    if (!self.midIV) {
-        self.midIV = [[UIImageView alloc] init];
-        [self.scrollView addSubview:self.midIV];
-    }
     [self.midIV setFrame:CGRectMake(offsetX, 0.f, self.bounds.size.width, self.bounds.size.height)];
     offsetX += self.bounds.size.width;
     
-    if (!self.nextIV) {
-        self.nextIV = [[UIImageView alloc] init];
-        [self.scrollView addSubview:self.nextIV];
-    }
     [self.nextIV setFrame:CGRectMake(offsetX, 0.f, self.bounds.size.width, self.bounds.size.height)];
     offsetX += self.bounds.size.width;
     
@@ -172,14 +132,11 @@
 }
 
 #pragma mark - ScrollViewDelegate
-
-- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
-{
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
     self.canAutoScroll = NO;
 }
 
-- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
-{
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
     self.canAutoScroll = YES;
     self.frozenTime = YES;
     
@@ -188,8 +145,7 @@
     });
 }
 
-- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
-{
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
     if ((scrollView.contentOffset.x > - 50.f) && (scrollView.contentOffset.x < 50.f)) {
         [self scrollToPre];
     }else if ((scrollView.contentOffset.x > (self.scrollView.bounds.size.width - 50.f)) && (scrollView.contentOffset.x < (self.scrollView.bounds.size.width + 50.f))) {
@@ -199,8 +155,8 @@
     }
 }
 
-- (void)scrollToPre
-{
+#pragma mark - Event
+- (void)scrollToPre {
     if (self.currentIndex == 0) {
         self.currentIndex = (self.bannerModelArr.count - 1);
     }else {
@@ -208,8 +164,7 @@
     }
 }
 
-- (void)scrollToNext
-{
+- (void)scrollToNext {
     if (self.currentIndex >= (self.bannerModelArr.count - 1)) {
         self.currentIndex = 0;
     }else {
@@ -217,15 +172,71 @@
     }
 }
 
-- (void)selfDidTouchEvent
-{
+- (void)selfDidTouchEvent {
     LXFBannerModel *currentBanner = self.bannerModelArr[self.currentIndex];
     if (self.didTouchEvent) {
         self.didTouchEvent(currentBanner);
     }
 }
 
+#pragma mark - Lazy
+- (UIScrollView *)scrollView {
+    if (!_scrollView) {
+        _scrollView = [[UIScrollView alloc] init];
+        [_scrollView setDelegate:self];
+        [_scrollView setPagingEnabled:YES];
+        [_scrollView setBounces:YES];
+        [_scrollView setShowsHorizontalScrollIndicator:NO];
+        [self addSubview:_scrollView];
+    }
+    return _scrollView;
+}
+
+- (LXF_StyledPageControl *)pageControl {
+    if (!_pageControl) {
+        _pageControl = [[LXF_StyledPageControl alloc]initWithFrame:CGRectZero];
+        _pageControl.coreNormalColor = [UIColor whiteColor];
+        _pageControl.coreSelectedColor= [UIColor colorWithHex:@"#E62129"];
+        _pageControl.numberOfPages = 0;
+        _pageControl.currentPage = 0;
+        _pageControl.strokeWidth = 0;
+        _pageControl.diameter = 7;
+        _pageControl.gapWidth = 20;
+        [self addSubview:_pageControl];
+    }
+    return _pageControl;
+}
+
+- (UIImageView *)preIV {
+    if (!_preIV) {
+        _preIV = [[UIImageView alloc] init];
+        [self.scrollView addSubview:_preIV];
+    }
+    return _preIV;
+}
+
+- (UIImageView *)midIV {
+    if (!_midIV) {
+        _midIV = [[UIImageView alloc] init];
+        [self.scrollView addSubview:_midIV];
+    }
+    return _midIV;
+}
+
+- (UIImageView *)nextIV {
+    if (!_nextIV) {
+        _nextIV = [[UIImageView alloc] init];
+        [self.scrollView addSubview:_nextIV];
+    }
+    return _nextIV;
+}
 @end
+
+
+
+
+
+
 
 //Model -----------------------------------------------
 @implementation LXFBannerModel
