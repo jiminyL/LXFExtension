@@ -16,6 +16,9 @@
 @property (nonatomic) CGFloat bottom;
 @property (nonatomic) CGFloat width;
 @property (nonatomic) CGFloat height;
+@property (nonatomic) CGFloat centerX;     ///< Shortcut for center.x
+@property (nonatomic) CGFloat centerY;     ///< Shortcut for center.y
+
 
 @property (nonatomic) CGPoint origin;
 @property (nonatomic) CGSize size;

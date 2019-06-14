@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "LXF_PhotoAssetNavigationController.h"
 
 @interface ViewController ()
 
@@ -17,12 +16,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    LXF_PhotoAssetNavigationController *vc = [[LXF_PhotoAssetNavigationController alloc] init];
-    [self presentViewController:vc animated:YES completion:nil];
+    
 }
 
 @end

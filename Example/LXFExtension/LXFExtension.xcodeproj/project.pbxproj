@@ -28,7 +28,7 @@
 		9857FDEC22854EF200C82A66 /* LXF_Photo_Seleted.png in Resources */ = {isa = PBXBuildFile; fileRef = 9857FDE622854EF100C82A66 /* LXF_Photo_Seleted.png */; };
 		9857FDEF22854F2900C82A66 /* LXF_PhotoSeleteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9857FDEE22854F2900C82A66 /* LXF_PhotoSeleteView.m */; };
 		9857FDF32285610300C82A66 /* LXF_PreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9857FDF22285610300C82A66 /* LXF_PreviewViewController.m */; };
-		9857FDF82285627500C82A66 /* LXF_PreviewScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9857FDF72285627500C82A66 /* LXF_PreviewScrollView.m */; };
+		9857FDF82285627500C82A66 /* LXF_PreviewCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9857FDF72285627500C82A66 /* LXF_PreviewCollectionView.m */; };
 		986195632241D8D600A5385E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 986195622241D8D600A5385E /* AppDelegate.m */; };
 		986195662241D8D600A5385E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 986195652241D8D600A5385E /* ViewController.m */; };
 		986195692241D8D600A5385E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 986195672241D8D600A5385E /* Main.storyboard */; };
@@ -118,6 +118,19 @@
 		9871FB562241D90E00A2BB73 /* LXF_FileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9871FB002241D90E00A2BB73 /* LXF_FileManager.m */; };
 		9871FB572241D90E00A2BB73 /* LXF_Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 9871FB032241D90E00A2BB73 /* LXF_Reachability.m */; };
 		9871FB582241D90E00A2BB73 /* LXF_DataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9871FB052241D90E00A2BB73 /* LXF_DataHelper.m */; };
+		988B520422A7658900B3F299 /* LXF_PreviewTopBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 988B520322A7658900B3F299 /* LXF_PreviewTopBar.m */; };
+		988CB05622A7674C00EC332A /* LXF_preview_sel_photoPickerVc.png in Resources */ = {isa = PBXBuildFile; fileRef = 988CB04D22A7674C00EC332A /* LXF_preview_sel_photoPickerVc.png */; };
+		988CB05722A7674C00EC332A /* LXF_preview_navi_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 988CB04E22A7674C00EC332A /* LXF_preview_navi_back.png */; };
+		988CB05822A7674C00EC332A /* LXF_preview_sel_photoPickerVc@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 988CB04F22A7674C00EC332A /* LXF_preview_sel_photoPickerVc@2x.png */; };
+		988CB05922A7674C00EC332A /* LXF_preview_def_photoPickerVc.png in Resources */ = {isa = PBXBuildFile; fileRef = 988CB05022A7674C00EC332A /* LXF_preview_def_photoPickerVc.png */; };
+		988CB05A22A7674C00EC332A /* LXF_preview_def_photoPickerVc@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 988CB05122A7674C00EC332A /* LXF_preview_def_photoPickerVc@3x.png */; };
+		988CB05B22A7674C00EC332A /* LXF_preview_navi_back@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 988CB05222A7674C00EC332A /* LXF_preview_navi_back@3x.png */; };
+		988CB05C22A7674C00EC332A /* LXF_preview_def_photoPickerVc@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 988CB05322A7674C00EC332A /* LXF_preview_def_photoPickerVc@2x.png */; };
+		988CB05D22A7674C00EC332A /* LXF_preview_navi_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 988CB05422A7674C00EC332A /* LXF_preview_navi_back@2x.png */; };
+		988CB05E22A7674C00EC332A /* LXF_preview_sel_photoPickerVc@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 988CB05522A7674C00EC332A /* LXF_preview_sel_photoPickerVc@3x.png */; };
+		988CB06122A7988600EC332A /* LXF_PGBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 988CB06022A7988600EC332A /* LXF_PGBottomView.m */; };
+		98C75BFF22A7BF9600D3993C /* UIButton+LargeTouchArea.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C75BFE22A7BF9600D3993C /* UIButton+LargeTouchArea.m */; };
+		98DF064522A7562500E50842 /* LXF_PreviewCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 98DF064422A7562500E50842 /* LXF_PreviewCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -157,8 +170,8 @@
 		9857FDEE22854F2900C82A66 /* LXF_PhotoSeleteView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXF_PhotoSeleteView.m; sourceTree = "<group>"; };
 		9857FDF12285610300C82A66 /* LXF_PreviewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXF_PreviewViewController.h; sourceTree = "<group>"; };
 		9857FDF22285610300C82A66 /* LXF_PreviewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXF_PreviewViewController.m; sourceTree = "<group>"; };
-		9857FDF62285627500C82A66 /* LXF_PreviewScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXF_PreviewScrollView.h; sourceTree = "<group>"; };
-		9857FDF72285627500C82A66 /* LXF_PreviewScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXF_PreviewScrollView.m; sourceTree = "<group>"; };
+		9857FDF62285627500C82A66 /* LXF_PreviewCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXF_PreviewCollectionView.h; sourceTree = "<group>"; };
+		9857FDF72285627500C82A66 /* LXF_PreviewCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXF_PreviewCollectionView.m; sourceTree = "<group>"; };
 		9861955E2241D8D600A5385E /* LXFExtension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LXFExtension.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		986195612241D8D600A5385E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		986195622241D8D600A5385E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -339,6 +352,23 @@
 		9871FB032241D90E00A2BB73 /* LXF_Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXF_Reachability.m; sourceTree = "<group>"; };
 		9871FB052241D90E00A2BB73 /* LXF_DataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXF_DataHelper.m; sourceTree = "<group>"; };
 		9871FB062241D90E00A2BB73 /* LXF_DataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXF_DataHelper.h; sourceTree = "<group>"; };
+		988B520222A7658900B3F299 /* LXF_PreviewTopBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXF_PreviewTopBar.h; sourceTree = "<group>"; };
+		988B520322A7658900B3F299 /* LXF_PreviewTopBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXF_PreviewTopBar.m; sourceTree = "<group>"; };
+		988CB04D22A7674C00EC332A /* LXF_preview_sel_photoPickerVc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LXF_preview_sel_photoPickerVc.png; sourceTree = "<group>"; };
+		988CB04E22A7674C00EC332A /* LXF_preview_navi_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LXF_preview_navi_back.png; sourceTree = "<group>"; };
+		988CB04F22A7674C00EC332A /* LXF_preview_sel_photoPickerVc@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LXF_preview_sel_photoPickerVc@2x.png"; sourceTree = "<group>"; };
+		988CB05022A7674C00EC332A /* LXF_preview_def_photoPickerVc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LXF_preview_def_photoPickerVc.png; sourceTree = "<group>"; };
+		988CB05122A7674C00EC332A /* LXF_preview_def_photoPickerVc@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LXF_preview_def_photoPickerVc@3x.png"; sourceTree = "<group>"; };
+		988CB05222A7674C00EC332A /* LXF_preview_navi_back@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LXF_preview_navi_back@3x.png"; sourceTree = "<group>"; };
+		988CB05322A7674C00EC332A /* LXF_preview_def_photoPickerVc@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LXF_preview_def_photoPickerVc@2x.png"; sourceTree = "<group>"; };
+		988CB05422A7674C00EC332A /* LXF_preview_navi_back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LXF_preview_navi_back@2x.png"; sourceTree = "<group>"; };
+		988CB05522A7674C00EC332A /* LXF_preview_sel_photoPickerVc@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LXF_preview_sel_photoPickerVc@3x.png"; sourceTree = "<group>"; };
+		988CB05F22A7988600EC332A /* LXF_PGBottomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXF_PGBottomView.h; sourceTree = "<group>"; };
+		988CB06022A7988600EC332A /* LXF_PGBottomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXF_PGBottomView.m; sourceTree = "<group>"; };
+		98C75BFD22A7BF9600D3993C /* UIButton+LargeTouchArea.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+LargeTouchArea.h"; sourceTree = "<group>"; };
+		98C75BFE22A7BF9600D3993C /* UIButton+LargeTouchArea.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+LargeTouchArea.m"; sourceTree = "<group>"; };
+		98DF064322A7562500E50842 /* LXF_PreviewCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXF_PreviewCollectionViewCell.h; sourceTree = "<group>"; };
+		98DF064422A7562500E50842 /* LXF_PreviewCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXF_PreviewCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -442,6 +472,8 @@
 			children = (
 				981907F02284045600C39CE2 /* LXF_PhotoGrid.h */,
 				981907F12284045600C39CE2 /* LXF_PhotoGrid.m */,
+				988CB05F22A7988600EC332A /* LXF_PGBottomView.h */,
+				988CB06022A7988600EC332A /* LXF_PGBottomView.m */,
 				981907F622840A5500C39CE2 /* LXF_PhotoGridCollectionViewCell.h */,
 				981907F722840A5500C39CE2 /* LXF_PhotoGridCollectionViewCell.m */,
 				9857FDED22854F2800C82A66 /* LXF_PhotoSeleteView.h */,
@@ -453,6 +485,15 @@
 		9857FDE022854E9E00C82A66 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				988CB05022A7674C00EC332A /* LXF_preview_def_photoPickerVc.png */,
+				988CB05322A7674C00EC332A /* LXF_preview_def_photoPickerVc@2x.png */,
+				988CB05122A7674C00EC332A /* LXF_preview_def_photoPickerVc@3x.png */,
+				988CB04E22A7674C00EC332A /* LXF_preview_navi_back.png */,
+				988CB05422A7674C00EC332A /* LXF_preview_navi_back@2x.png */,
+				988CB05222A7674C00EC332A /* LXF_preview_navi_back@3x.png */,
+				988CB04D22A7674C00EC332A /* LXF_preview_sel_photoPickerVc.png */,
+				988CB04F22A7674C00EC332A /* LXF_preview_sel_photoPickerVc@2x.png */,
+				988CB05522A7674C00EC332A /* LXF_preview_sel_photoPickerVc@3x.png */,
 				9857FDE622854EF100C82A66 /* LXF_Photo_Seleted.png */,
 				9857FDE322854EF100C82A66 /* LXF_Photo_Seleted@2x.png */,
 				9857FDE522854EF100C82A66 /* LXF_Photo_Seleted@3x.png */,
@@ -485,8 +526,12 @@
 		9857FDF52285611C00C82A66 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
-				9857FDF62285627500C82A66 /* LXF_PreviewScrollView.h */,
-				9857FDF72285627500C82A66 /* LXF_PreviewScrollView.m */,
+				9857FDF62285627500C82A66 /* LXF_PreviewCollectionView.h */,
+				9857FDF72285627500C82A66 /* LXF_PreviewCollectionView.m */,
+				988B520222A7658900B3F299 /* LXF_PreviewTopBar.h */,
+				988B520322A7658900B3F299 /* LXF_PreviewTopBar.m */,
+				98DF064322A7562500E50842 /* LXF_PreviewCollectionViewCell.h */,
+				98DF064422A7562500E50842 /* LXF_PreviewCollectionViewCell.m */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -515,7 +560,6 @@
 				986195622241D8D600A5385E /* AppDelegate.m */,
 				986195642241D8D600A5385E /* ViewController.h */,
 				986195652241D8D600A5385E /* ViewController.m */,
-				980BB1422282B8EF003AB87C /* LXF_PhotoAsset */,
 				986195672241D8D600A5385E /* Main.storyboard */,
 				9861956A2241D8D700A5385E /* Assets.xcassets */,
 				9861956C2241D8D700A5385E /* LaunchScreen.storyboard */,
@@ -758,6 +802,8 @@
 				9871FABC2241D90E00A2BB73 /* UIView+LXFSizes.m */,
 				9871FABD2241D90E00A2BB73 /* UIView+LXFLayout.h */,
 				9871FAC92241D90E00A2BB73 /* UIView+LXFLayout.m */,
+				98C75BFD22A7BF9600D3993C /* UIButton+LargeTouchArea.h */,
+				98C75BFE22A7BF9600D3993C /* UIButton+LargeTouchArea.m */,
 				9871FAC82241D90E00A2BB73 /* NSObject+LXFSwizzing.h */,
 				9871FABE2241D90E00A2BB73 /* NSObject+LXFSwizzing.m */,
 				9871FAC72241D90E00A2BB73 /* NSData+LXFAES.h */,
@@ -881,6 +927,7 @@
 			children = (
 				9871FAFC2241D90E00A2BB73 /* LXF_FloatView.h */,
 				9871FAFB2241D90E00A2BB73 /* LXF_FloatView.m */,
+				980BB1422282B8EF003AB87C /* LXF_PhotoAsset */,
 			);
 			path = lxf_FeatureViews;
 			sourceTree = "<group>";
@@ -975,12 +1022,21 @@
 				9857FDEA22854EF200C82A66 /* LXF_Photo_unSeleted@3x.png in Resources */,
 				9861956E2241D8D700A5385E /* LaunchScreen.storyboard in Resources */,
 				9857FDE722854EF200C82A66 /* LXF_Photo_unSeleted.png in Resources */,
+				988CB05E22A7674C00EC332A /* LXF_preview_sel_photoPickerVc@3x.png in Resources */,
 				9861956B2241D8D700A5385E /* Assets.xcassets in Resources */,
+				988CB05822A7674C00EC332A /* LXF_preview_sel_photoPickerVc@2x.png in Resources */,
 				9857FDEC22854EF200C82A66 /* LXF_Photo_Seleted.png in Resources */,
+				988CB05B22A7674C00EC332A /* LXF_preview_navi_back@3x.png in Resources */,
+				988CB05722A7674C00EC332A /* LXF_preview_navi_back.png in Resources */,
+				988CB05622A7674C00EC332A /* LXF_preview_sel_photoPickerVc.png in Resources */,
 				9871FB092241D90E00A2BB73 /* README.md in Resources */,
 				9857FDE822854EF200C82A66 /* LXF_Photo_unSeleted@2x.png in Resources */,
+				988CB05D22A7674C00EC332A /* LXF_preview_navi_back@2x.png in Resources */,
+				988CB05A22A7674C00EC332A /* LXF_preview_def_photoPickerVc@3x.png in Resources */,
 				9857FDE922854EF200C82A66 /* LXF_Photo_Seleted@2x.png in Resources */,
+				988CB05922A7674C00EC332A /* LXF_preview_def_photoPickerVc.png in Resources */,
 				9871FB162241D90E00A2BB73 /* MJRefresh.bundle in Resources */,
+				988CB05C22A7674C00EC332A /* LXF_preview_def_photoPickerVc@2x.png in Resources */,
 				986195692241D8D600A5385E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1001,6 +1057,7 @@
 				9871FB202241D90E00A2BB73 /* MJRefreshNormalHeader.m in Sources */,
 				981907DC2283C45F00C39CE2 /* LXF_PhotoAssetNavigationController.m in Sources */,
 				9871FB172241D90E00A2BB73 /* UIScrollView+MJExtension.m in Sources */,
+				988B520422A7658900B3F299 /* LXF_PreviewTopBar.m in Sources */,
 				9871FB322241D90E00A2BB73 /* AFURLConnectionOperation.m in Sources */,
 				981907F5228407C700C39CE2 /* LXF_PhotoModel.m in Sources */,
 				9871FB182241D90E00A2BB73 /* NSBundle+MJRefresh.m in Sources */,
@@ -1011,7 +1068,7 @@
 				986195662241D8D600A5385E /* ViewController.m in Sources */,
 				981907D92283C43D00C39CE2 /* LXF_AlbumViewController.m in Sources */,
 				9871FB3F2241D90E00A2BB73 /* NSMutableArray+LXFSwizzling.m in Sources */,
-				9857FDF82285627500C82A66 /* LXF_PreviewScrollView.m in Sources */,
+				9857FDF82285627500C82A66 /* LXF_PreviewCollectionView.m in Sources */,
 				9871FB4A2241D90E00A2BB73 /* LXF_BrowserViewController.m in Sources */,
 				981907F822840A5500C39CE2 /* LXF_PhotoGridCollectionViewCell.m in Sources */,
 				9871FB412241D90E00A2BB73 /* NSDate+LXFTooKit.m in Sources */,
@@ -1025,6 +1082,7 @@
 				986195712241D8D700A5385E /* main.m in Sources */,
 				9871FB132241D90E00A2BB73 /* MJFoundation.m in Sources */,
 				9867E3BE22854ACA00B197A7 /* LXF_PhotoManager.m in Sources */,
+				988CB06122A7988600EC332A /* LXF_PGBottomView.m in Sources */,
 				9871FB152241D90E00A2BB73 /* MJRefreshConst.m in Sources */,
 				981907E22283C76200C39CE2 /* LXF_AlbumTableViewCell.m in Sources */,
 				9871FB282241D90E00A2BB73 /* UIAlertView+AFNetworking.m in Sources */,
@@ -1076,7 +1134,9 @@
 				9871FB1D2241D90E00A2BB73 /* MJRefreshAutoStateFooter.m in Sources */,
 				9871FB352241D90E00A2BB73 /* AFURLRequestSerialization.m in Sources */,
 				9871FB102241D90E00A2BB73 /* NSObject+MJClass.m in Sources */,
+				98DF064522A7562500E50842 /* LXF_PreviewCollectionViewCell.m in Sources */,
 				9871FB432241D90E00A2BB73 /* UIColor+LXFToolkit.m in Sources */,
+				98C75BFF22A7BF9600D3993C /* UIButton+LargeTouchArea.m in Sources */,
 				9871FB3A2241D90E00A2BB73 /* UIImage+LXFToolkit.m in Sources */,
 				9871FB3B2241D90E00A2BB73 /* UIView+LXFSizes.m in Sources */,
 				9871FB382241D90E00A2BB73 /* AFSecurityPolicy.m in Sources */,
