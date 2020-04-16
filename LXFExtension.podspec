@@ -9,9 +9,9 @@
 Pod::Spec.new do |s|
   s.name             = 'LXFExtension'
   s.version          = '0.1.0'
-  s.summary          = 'MyExtension'
+  s.summary          = 'LXFExtension'
   s.description      = <<-DESC
-                        我的工具类
+                        LXFExtension 我的工具类
                        DESC
 
   s.homepage         = 'https://github.com/jiminyL/LXFExtension'
