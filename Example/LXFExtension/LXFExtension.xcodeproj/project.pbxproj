@@ -21,6 +21,7 @@
 		9887DC01244766E000E2CACD /* NSMutableArray+LXFSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 9887DBF0244766DF00E2CACD /* NSMutableArray+LXFSwizzling.m */; };
 		9887DC02244766E000E2CACD /* NSDate+LXFTooKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 9887DBF9244766DF00E2CACD /* NSDate+LXFTooKit.m */; };
 		9887DC03244766E000E2CACD /* UIColor+LXFToolkit.m in Sources */ = {isa = PBXBuildFile; fileRef = 9887DBFA244766DF00E2CACD /* UIColor+LXFToolkit.m */; };
+		98BCB2F2244A00E30018EA1B /* UIView+LXFCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 98BCB2F1244A00E30018EA1B /* UIView+LXFCommon.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,8 @@
 		9887DBF9244766DF00E2CACD /* NSDate+LXFTooKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+LXFTooKit.m"; sourceTree = "<group>"; };
 		9887DBFA244766DF00E2CACD /* UIColor+LXFToolkit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+LXFToolkit.m"; sourceTree = "<group>"; };
 		9887DBFB244766DF00E2CACD /* NSMutableArray+LXFSwizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+LXFSwizzling.h"; sourceTree = "<group>"; };
+		98BCB2F0244A00E30018EA1B /* UIView+LXFCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+LXFCommon.h"; sourceTree = "<group>"; };
+		98BCB2F1244A00E30018EA1B /* UIView+LXFCommon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+LXFCommon.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 				9887DBF9244766DF00E2CACD /* NSDate+LXFTooKit.m */,
 				9887DBFA244766DF00E2CACD /* UIColor+LXFToolkit.m */,
 				9887DBFB244766DF00E2CACD /* NSMutableArray+LXFSwizzling.h */,
+				98BCB2F0244A00E30018EA1B /* UIView+LXFCommon.h */,
+				98BCB2F1244A00E30018EA1B /* UIView+LXFCommon.m */,
 			);
 			name = LXFExtension;
 			path = ../../LXFExtension;
@@ -192,6 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98BCB2F2244A00E30018EA1B /* UIView+LXFCommon.m in Sources */,
 				9887DBFD244766E000E2CACD /* UIView+LXFSizes.m in Sources */,
 				9887DC02244766E000E2CACD /* NSDate+LXFTooKit.m in Sources */,
 				9887DC03244766E000E2CACD /* UIColor+LXFToolkit.m in Sources */,
