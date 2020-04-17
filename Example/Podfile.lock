@@ -1,0 +1,16 @@
+PODS:
+  - LXFExtension (0.1.0)
+
+DEPENDENCIES:
+  - LXFExtension (from `../`)
+
+EXTERNAL SOURCES:
+  LXFExtension:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LXFExtension: 498a87ec70cdae6b2fb4c7819ed9237e036a50fe
+
+PODFILE CHECKSUM: 4778e0782bebfe5222a1834191053ab9f259f20d
+
+COCOAPODS: 1.9.1
