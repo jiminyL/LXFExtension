@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)rotaion180;
 - (void)rotationToOrg;
+///增加渐变
+- (void)addGradientWithColors:(NSArray<UIColor *> *)colors horizontal:(BOOL)isHorizontal;
 
 @end
 
