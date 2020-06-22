@@ -17,6 +17,9 @@ NS_ASSUME_NONNULL_BEGIN
 ///增加渐变
 - (void)addGradientWithColors:(NSArray<UIColor *> *)colors horizontal:(BOOL)isHorizontal;
 
+///设置圆角 corners:UIRectCornerTopRight | UIRectCornerTopLeft | UIRectCornerBottomLeft | UIRectCornerBottomRight
+- (void)bezierCornerRadius:(CGFloat)radius rectCorners:(UIRectCorner)corners;
+
 @end
 
 NS_ASSUME_NONNULL_END

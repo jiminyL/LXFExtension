@@ -49,4 +49,14 @@
     [self.layer insertSublayer:layer atIndex:0];
 }
 
+///指定位置增加圆角
+- (void)bezierCornerRadius:(CGFloat)radius rectCorners:(UIRectCorner)corners {
+    self.layer.masksToBounds = YES;
+    UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds byRoundingCorners:corners cornerRadii:CGSizeMake(radius, radius)];
+    CAShapeLayer *maskLayer = [[CAShapeLayer alloc] init];
+    maskLayer.frame = self.bounds;
+    maskLayer.path = maskPath.CGPath;
+    self.layer.mask = maskLayer;
+}
+
 @end
