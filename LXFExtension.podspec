@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LXFExtension'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = 'LXFExtension'
   s.description      = <<-DESC
                         LXFExtension 我的工具类
